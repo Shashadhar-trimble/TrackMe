@@ -47,7 +47,7 @@ public class AppProperties extends Properties {
         }
     }
 
-    public String getProperty(String key){
+    public String getLocalProperty(String key){
         return getProperty(key, DEFAULT_VALUE);
     }
 

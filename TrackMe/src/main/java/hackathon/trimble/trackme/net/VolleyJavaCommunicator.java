@@ -24,8 +24,8 @@ public class VolleyJavaCommunicator {
     }
 
     private String getEndpointUrl(String endpoint) {
-        String rootUrl = AppProperties.getInstance().getProperty("rooturl");
-        return rootUrl + AppProperties.getInstance().getProperty(endpoint);
+        String rootUrl = AppProperties.getInstance().getLocalProperty("rooturl");
+        return rootUrl + AppProperties.getInstance().getLocalProperty(endpoint);
     }
 
     private String getNodeUrl() {

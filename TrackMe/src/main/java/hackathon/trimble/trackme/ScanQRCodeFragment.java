@@ -137,12 +137,16 @@ public class ScanQRCodeFragment extends Fragment {
         }
     }
 
-    public  void setContent(@NonNull  String contents){
+    public  void setContent(@NonNull  String contents ,boolean clear){
         try {
             if(contents!=null)
             if(null!=contentTxt){
                 contentTxt.setVisibility(View.VISIBLE);
-                contentTxt.setText(contents);
+                if(clear) {
+                    contentTxt.setText(contents);
+                }else{
+                    contentTxt.setText(contentTxt.getText()+contents);
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();

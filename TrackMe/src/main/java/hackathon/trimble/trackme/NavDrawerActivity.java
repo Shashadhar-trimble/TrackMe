@@ -48,6 +48,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
+import java.lang.ref.PhantomReference;
 import java.text.DateFormat;
 import java.util.Date;
 
@@ -55,6 +56,7 @@ import hackathon.trimble.trackme.model.Locator;
 import hackathon.trimble.trackme.net.NetworkException;
 import hackathon.trimble.trackme.net.NetworkResponse;
 import hackathon.trimble.trackme.net.VolleyJavaCommunicator;
+import hackathon.trimble.trackme.net.volley.PublishResponse;
 
 import static hackathon.trimble.trackme.TrackMeApplication.ID;
 
@@ -92,6 +94,8 @@ public class NavDrawerActivity extends AppCompatActivity
      */
     private static final long FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS =
             UPDATE_INTERVAL_IN_MILLISECONDS / 2;
+
+    private static int counterToClear=0;
 
     //endregion constants
 
@@ -227,7 +231,7 @@ public class NavDrawerActivity extends AppCompatActivity
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.contentLayout, fragment).commit();
                 findViewById(R.id.toolbar_title_text).setVisibility(View.VISIBLE);
-                ((TextView) findViewById(R.id.toolbar_title_text)).setText("Scan QR Code");
+                ((TextView) findViewById(R.id.toolbar_title_text)).setText("Track Me");
 
             } else if (id == R.id.nav_manage) {
                 fragment = OrderDetailsFragment.newInstance();
@@ -300,7 +304,7 @@ public class NavDrawerActivity extends AppCompatActivity
                         if (result.getContents() != null) {
                             Log.e("Scan QR code", result.getContents());
                             if (fragment instanceof ScanQRCodeFragment) {
-                                ((ScanQRCodeFragment) fragment).setContent(QRCodeResult);
+                                ((ScanQRCodeFragment) fragment).setContent("QR Code:"+QRCodeResult+"\n",true);
                                 //stores the id
                                 ID = QRCodeResult;
                             }
@@ -467,7 +471,23 @@ public class NavDrawerActivity extends AppCompatActivity
         communicator.publishData(ID, locator, new NetworkResponse.Listener() {
             @Override
             public void onResponse(Object result) {
-                Log.d(TAG, "Location published to server successfully");
+                if(result instanceof PublishResponse) {
+                    Log.d(TAG, "Location published to server successfully");
+                    if(fragment instanceof ScanQRCodeFragment){
+                        counterToClear=counterToClear+1;
+                        PublishResponse response=(PublishResponse)result;
+                        Double lat=response.getBody().getLat();
+                        Double lan=response.getBody().getLon();
+                        String timeStamp=response.getBody().getTimestamp();
+                        if(counterToClear==9){
+                            counterToClear=0;
+                            ((ScanQRCodeFragment) fragment).setContent(String.format("Location published with id:%s,lat:%f,lon:%f at time:%s \n",ID,lat,lan,timeStamp),true);
+                        }else{
+                            ((ScanQRCodeFragment) fragment).setContent(String.format("Location published with id:%s,lat:%f,lon:%f at time:%s \n",ID,lat,lan,timeStamp),false);
+                        }
+
+                    }
+                }
             }
         }, new NetworkResponse.ErrorListener() {
             @Override
