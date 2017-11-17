@@ -1,32 +1,32 @@
 package hackathon.trimble.trackme;
 
+
+//region import directives
+
 import android.Manifest;
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Looper;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
-import android.util.Log;
-import android.view.View;
-import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,8 +58,17 @@ import hackathon.trimble.trackme.net.VolleyJavaCommunicator;
 
 import static hackathon.trimble.trackme.TrackMeApplication.ID;
 
+//endregion import directives
+
+/**
+ * Navigation drawer activity , acts as main activity
+ * Created by Shashadhar on 17-Nov-2019
+ */
+
 public class NavDrawerActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, ScanQRCodeFragment.OnFragmentInteractionListener {
+
+    //region constants
 
     private static final String TAG = NavDrawerActivity.class.getSimpleName();
     /**
@@ -84,10 +93,10 @@ public class NavDrawerActivity extends AppCompatActivity
     private static final long FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS =
             UPDATE_INTERVAL_IN_MILLISECONDS / 2;
 
-    // Keys for storing activity state in the Bundle.
-    private final static String KEY_REQUESTING_LOCATION_UPDATES = "requesting-location-updates";
-    private final static String KEY_LOCATION = "location";
-    private final static String KEY_LAST_UPDATED_TIME_STRING = "last-updated-time-string";
+    //endregion constants
+
+
+    //region members
 
     /**
      * Provides access to the Fused Location Provider API.
@@ -123,31 +132,45 @@ public class NavDrawerActivity extends AppCompatActivity
      * Tracks the status of the location updates request. Value changes when the user presses the
      * Start Updates and Stop Updates buttons.
      */
-    private Boolean mRequestingLocationUpdates=false;
+    private Boolean mRequestingLocationUpdates = false;
 
     /**
      * Time when the location was updated represented as a String.
      */
     private String mLastUpdateTime;
 
+    /**
+     * Stores current location
+     */
     private Location mCurrentLocation;
 
+    /**
+     * Fragment , used to store the reference of fragment inflated
+     */
     private android.support.v4.app.Fragment fragment;
-    private VolleyJavaCommunicator communicator= new VolleyJavaCommunicator(this);
 
+    /**
+     * VolleyJavaCommunicator instance used for server api calls
+     */
+    private VolleyJavaCommunicator communicator = new VolleyJavaCommunicator(this);
+
+    //endregion members
+
+
+    //region lifecycle overrides
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         try {
             setContentView(R.layout.activity_nav_drawer);
-            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+            Toolbar toolbar =findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                     this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
             drawer.addDrawerListener(toggle);
             toggle.syncState();
-            NavigationView navigationView =findViewById(R.id.nav_view);
+            NavigationView navigationView = findViewById(R.id.nav_view);
             navigationView.setNavigationItemSelectedListener(this);
             findViewById(R.id.toolbar_title_text).setVisibility(View.VISIBLE);
             ((TextView) findViewById(R.id.toolbar_title_text)).setText("TrackMe");
@@ -156,6 +179,8 @@ public class NavDrawerActivity extends AppCompatActivity
             mRequestingLocationUpdates = false;
             mLastUpdateTime = "";
             setUpLocationRequest();
+
+            //selecting the first menu default
             onNavigationItemSelected(navigationView.getMenu().getItem(0));
         } catch (Exception e) {
             e.printStackTrace();
@@ -181,11 +206,7 @@ public class NavDrawerActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
@@ -232,7 +253,6 @@ public class NavDrawerActivity extends AppCompatActivity
     @Override
     protected void onPause() {
         super.onPause();
-
         // Remove location updates to save battery.
         stopLocationUpdates();
     }
@@ -270,11 +290,11 @@ public class NavDrawerActivity extends AppCompatActivity
                     break;
 
                 default: {
-                    Log.e("On Activity resutlt", "Nav");
-                    String QRCodeResult = null;
+
+                    //result of QR code scanning
+                    String QRCodeResult;
                     super.onActivityResult(requestCode, resultCode, data);
                     IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-                    String contentStr = null;
                     if (resultCode == RESULT_OK && result != null) {
                         QRCodeResult = result.getContents();
                         if (result.getContents() != null) {
@@ -282,7 +302,7 @@ public class NavDrawerActivity extends AppCompatActivity
                             if (fragment instanceof ScanQRCodeFragment) {
                                 ((ScanQRCodeFragment) fragment).setContent(QRCodeResult);
                                 //stores the id
-                                ID=QRCodeResult;
+                                ID = QRCodeResult;
                             }
                         }
                     }
@@ -294,6 +314,7 @@ public class NavDrawerActivity extends AppCompatActivity
         }
     }
 
+    //region lifecycle overrides
 
     /**
      * Shows a {@link Snackbar}.
@@ -317,9 +338,9 @@ public class NavDrawerActivity extends AppCompatActivity
     private boolean checkPermissions() {
         int permissionState = ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_FINE_LOCATION);
-        int permissionStateCamera=ActivityCompat.checkSelfPermission(this,
+        int permissionStateCamera = ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.CAMERA);
-        return permissionState == PackageManager.PERMISSION_GRANTED && permissionStateCamera==PackageManager.PERMISSION_GRANTED;
+        return permissionState == PackageManager.PERMISSION_GRANTED && permissionStateCamera == PackageManager.PERMISSION_GRANTED;
     }
 
 
@@ -327,9 +348,6 @@ public class NavDrawerActivity extends AppCompatActivity
         boolean shouldProvideRationale =
                 ActivityCompat.shouldShowRequestPermissionRationale(this,
                         Manifest.permission.ACCESS_FINE_LOCATION);
-
-        // Provide an additional rationale to the user. This would happen if the user denied the
-        // request previously, but didn't check the "Don't ask again" checkbox.
         if (shouldProvideRationale) {
             Log.i(TAG, "Displaying permission rationale to provide additional context.");
             showSnackbar(R.string.permission_rationale,
@@ -344,11 +362,8 @@ public class NavDrawerActivity extends AppCompatActivity
                     });
         } else {
             Log.i(TAG, "Requesting permission");
-            // Request permission. It's possible this can be auto answered if device policy
-            // sets the permission in a given state or the user denied the permission
-            // previously and checked "Never ask again".
             ActivityCompat.requestPermissions(NavDrawerActivity.this,
-                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.CAMERA},
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.CAMERA},
                     REQUEST_PERMISSIONS_REQUEST_CODE);
         }
     }
@@ -362,8 +377,6 @@ public class NavDrawerActivity extends AppCompatActivity
         Log.i(TAG, "onRequestPermissionResult");
         if (requestCode == REQUEST_PERMISSIONS_REQUEST_CODE) {
             if (grantResults.length <= 0) {
-                // If user interaction was interrupted, the permission request is cancelled and you
-                // receive empty arrays.
                 Log.i(TAG, "User interaction was cancelled.");
             } else if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 if (mRequestingLocationUpdates) {
@@ -440,28 +453,28 @@ public class NavDrawerActivity extends AppCompatActivity
 
     @Override
     public void startPublishing() {
-        mRequestingLocationUpdates=true;
+        mRequestingLocationUpdates = true;
         shouldStartLocationUpdates();
     }
 
     //Start publishing
-    private  void updateLocationUpdateToServer(){
+    private void updateLocationUpdateToServer() {
 
-        Locator locator=new Locator();
+        Locator locator = new Locator();
         locator.setLon(mCurrentLocation.getLongitude());
         locator.setLat(mCurrentLocation.getLatitude());
         locator.setTimestamp(mLastUpdateTime);
         communicator.publishData(ID, locator, new NetworkResponse.Listener() {
             @Override
             public void onResponse(Object result) {
-                Log.d(TAG,"Location published to server successfully");
+                Log.d(TAG, "Location published to server successfully");
             }
         }, new NetworkResponse.ErrorListener() {
             @Override
             public void onError(NetworkException error, boolean isSessionInvalid) {
-                Log.d(TAG,"Error in publishing location update to server");
+                Log.d(TAG, "Error in publishing location update to server");
             }
-        },"test");
+        }, "test");
 
     }
 
@@ -558,8 +571,6 @@ public class NavDrawerActivity extends AppCompatActivity
                     }
                 });
     }
-
-
 
 
 }

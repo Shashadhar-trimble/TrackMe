@@ -33,15 +33,6 @@ import static android.app.Activity.RESULT_OK;
  * create an instance of this fragment.
  */
 public class ScanQRCodeFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
     private OnFragmentInteractionListener mListener;
     TextView contentTxt;
 
@@ -58,8 +49,6 @@ public class ScanQRCodeFragment extends Fragment {
     public static ScanQRCodeFragment newInstance() {
         ScanQRCodeFragment fragment = new ScanQRCodeFragment();
         Bundle args = new Bundle();
-/*        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);*/
         fragment.setArguments(args);
         return fragment;
     }
@@ -68,8 +57,6 @@ public class ScanQRCodeFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
@@ -95,7 +82,6 @@ public class ScanQRCodeFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                    QrScanner();
-                   // setLocatorContent();
                 }
             });
 
@@ -105,12 +91,6 @@ public class ScanQRCodeFragment extends Fragment {
         return view;
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
 
     @Override
     public void onAttach(Context context) {
@@ -157,26 +137,7 @@ public class ScanQRCodeFragment extends Fragment {
         }
     }
 
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        try {
-            Log.e("On Activity resutlt", "Fragment");
-            super.onActivityResult(requestCode, resultCode, data);
-            IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-            String contentStr = null;
-            if (resultCode == RESULT_OK && result != null) {
-                if (result.getContents() != null) {
-                    Log.e("Scan QR code", result.getContents());
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-    }
-
     public  void setContent(@NonNull  String contents){
-
         try {
             if(contents!=null)
             if(null!=contentTxt){
