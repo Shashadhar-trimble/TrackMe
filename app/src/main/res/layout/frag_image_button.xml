@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/button_linear_wrapper"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:longClickable="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_emboss"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/button_emboss_top_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/button_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_selector_gray"
+        android:duplicateParentState="true"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/title_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@+id/image_wrapper"
+                android:layout_width="@dimen/status_image_height_width_size"
+                android:layout_height="@dimen/status_image_height_width_size"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/status_image_align_right_pad"
+                android:layout_toLeftOf="@+id/title">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_emergency_white"/>
+            </RelativeLayout>
+
+            <view
+                android:id="@+id/title"
+                style="@style/ShadowTextWhite"
+                class="hackathon.trimble.trackme.AutoAdjustTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="@string/emergency_send_button_text"
+                android:textSize="@dimen/status_button_title_text_size"/>
+
+            <RelativeLayout
+                android:id="@+id/spacer"
+                android:layout_width="@dimen/status_image_height_width_size"
+                android:layout_height="@dimen/status_image_height_width_size"
+                android:layout_marginLeft="@dimen/status_image_align_right_pad"
+                >
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/button_emboss_bottom"
+        />
+
+</LinearLayout>

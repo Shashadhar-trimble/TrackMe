@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="hackathon.trimble.trackme.ScanQRCodeFragment">
+
+    <LinearLayout android:id="@+id/ContentLayout"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/scanContent"
+            android:layout_width="match_parent"
+            tools:text="content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_margin="15dp"
+            android:id="@+id/btnScanQRcode"
+            android:layout_height="@dimen/login_edit_text_height"
+            android:text="Scan QR Code"
+            android:layout_alignBottom="@+id/scanContent"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:background="@drawable/border_rounded_1" />
+
+        <Button
+            android:layout_margin="15dp"
+            android:id="@+id/btnUpdate"
+            android:layout_height="@dimen/login_edit_text_height"
+            android:text="Start Tracking"
+            android:layout_alignBottom="@+id/scanContent"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:background="@drawable/border_rounded_1" />
+    </LinearLayout>
+
+
+</RelativeLayout>

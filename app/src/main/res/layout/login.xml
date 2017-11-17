@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/login_bg"
+              android:focusableInTouchMode="true"
+              android:gravity="fill"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:fillViewport="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        tools:ignore="InefficientWeight">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <RelativeLayout
+                android:id="@+id/image_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/login_trimble_icon_margin_bottom"
+                android:layout_marginTop="@dimen/login_trimble_icon_margin_top">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Undefined"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo_trimble_image"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editDriverID"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:background="@android:color/white"
+                android:ellipsize="start"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:hint="@string/login_driver_id_hint"
+                android:imeOptions="flagNoExtractUi"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/general_button_text_size"
+                android:textStyle="bold"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_button_spacing"/>
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:background="@android:color/white"
+                android:ellipsize="start"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:hint="@string/login_driver_pin_hint"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:visibility="gone"
+                android:textSize="@dimen/general_button_text_size"
+                android:textStyle="bold"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_button_spacing"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_pin_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#50000000"
+                android:visibility="gone"
+                android:padding="@dimen/login_checkbox_padding">
+
+                <CheckBox
+                    android:id="@+id/pin_change_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox"
+                    android:checked="false"
+                    android:visibility="gone"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/change_pin_login"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/login_pre_check_text_size"/>
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="65dp"/>
+
+            <LinearLayout
+                android:id="@+id/login_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/login_button_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_button_spacing"/>
+
+                <LinearLayout
+                    android:id="@+id/login_cancel_button_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keyboard_button_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <!-- inner button w/ text -->
+                <Button
+                    android:id="@+id/keyboard_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/keyboard"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:textColor="@color/trimble_text_white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

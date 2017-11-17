@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+    <!-- Background color -->
+    <solid android:color="@color/button_badge_background"/>
+
+    <!-- Size -->
+    <size
+        android:width="24dp"
+        android:height="24dp"/>
+
+    <!-- Colored Border -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/trimble_background_gray"/>
+</shape>

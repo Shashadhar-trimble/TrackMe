@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <stroke
+        android:color="@android:color/transparent"
+        android:width="10dp" />
+    <size
+        android:width="@dimen/preferences_radio_width_height"
+        android:height="@dimen/preferences_radio_width_height" />
+    <solid android:color="@color/trimble_text_yellow" />
+</shape> 
+        

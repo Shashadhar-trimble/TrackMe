@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+		If Library: (Requires ADT Tools R17 or later)
+		<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    -->
+    <!--
+		If App:
+		<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res/com.twistpair.wave.communicator.oem">
+    -->
+    <!--
+		Reference:
+		http://stackoverflow.com/questions/4336060/android-how-to-add-a-custom-button-state
+		http://www.charlesharley.com/2012/programming/custom-drawable-states-in-android/
+		http://sriramramani.wordpress.com/2012/11/17/custom-states/
+		   
+		The below rules and drawables were obtained and extended from:
+		http://android-holo-colors.com
+    -->
+
+    <item android:drawable="@drawable/btn_ptt_group_error" app:state_error="true"/>
+    <item android:drawable="@drawable/btn_ptt_group_speaking" app:state_speaking="true"/>
+    <item android:drawable="@drawable/btn_ptt_group_trying" app:state_ptt_trying="true"/>
+    <item android:drawable="@drawable/btn_ptt_group_enabled" android:state_enabled="true"/>
+    <item android:drawable="@drawable/btn_ptt_group_disabled"/>
+
+</selector>

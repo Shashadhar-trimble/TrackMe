@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- This is the material design toolbar that shall be used as an action bar -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:theme="@style/TrimbleActionBarTheme"
+        app:contentInsetEnd="8dp"
+        app:contentInsetStart="8dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <!-- Layout containing toolbar logo and title text -->
+        <LinearLayout
+            android:id="@+id/toolbar_title_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/toolbar_logo_selector"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/toolbar_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:clickable="false"
+                android:src="@drawable/logo_trimble_image"
+                android:contentDescription="Undefined"/>
+
+            <TextView
+                android:id="@+id/toolbar_title_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="6dp"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/trimble_text_white"
+                android:textSize="@dimen/action_bar_title_text_size"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <!-- Toolbar shadow -->
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/toolbar_drop_shadow"/>
+</android.support.design.widget.AppBarLayout>

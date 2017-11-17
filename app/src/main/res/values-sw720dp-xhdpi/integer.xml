@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Samsung Tab S2, 1536x2048, 320ppi (xhdpi) (1536/(320/160) = 768) -->
+
+    <!-- Button badge margins -->
+    <integer name="dashboard_button_badge_margin_top">48</integer>
+    <integer name="dashboard_button_badge_margin_end">64</integer>
+    <integer name="view_pager_button_badge_margin_top">28</integer>
+    <integer name="view_pager_button_badge_margin_end">40</integer>
+</resources>

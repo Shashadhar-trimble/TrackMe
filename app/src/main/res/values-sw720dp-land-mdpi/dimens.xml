@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Report audio message dialog related dimensions-->
+    <dimen name="disclaimer_dialog_content_text_size">30sp</dimen>
+    <dimen name="dialog_report_audio_message_content_text_size">34sp</dimen>
+</resources>

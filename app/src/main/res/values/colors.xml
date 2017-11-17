@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="toolbar_background">#404142</color>
+    <color name="text_color_1">#404142</color>
+    <color name="toolbar_items">#CBCBCB</color>
+    <color name="alert">#AC1600</color>
+    <color name="success">#37A51C</color>
+    <color name="button_default">#329AD6</color>
+    <color name="informative_message">#329AD6</color>
+    <color name="button_pressed">#2A5C91</color>
+    <color name="actuated">#2A5C91</color>
+    <color name="text_border_default">#303232</color>
+    <color name="text_border_selected">#4EA9DC</color>
+    <color name="amz">#FF9900</color>
+    <color name="warning">#E94700</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey_100">#F5F7F7</color>
+    <color name="grey_300">#8D9496</color>
+    <color name="grey_400">#5A5D5E</color>
+    <color name="grey_500">#404142</color>
+    <color name="grey_600">#303232</color>
+    <color name="grey_700">#1D1E1E</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="button_text_color">@android:color/white</color>
+    <color name="text_yellow">#c4aa1c</color>
+    <color name="action_button_background">#464647</color>
+    <color name="action_bar_selected">#1F8FC5</color>
+    <color name="login_button_background">@android:color/holo_green_dark</color>
+    <color name="login_setup_device_text">@android:color/holo_blue_light</color>
+
+    <!-- Official Trimble colors -->
+    <color name="trimble_header_blue">#005596</color>
+    <color name="trimble_background_gray">#353535</color>
+    <color name="trimble_background_dark_gray">#282828</color>
+    <color name="trimble_navigation_bar_gray">#535353</color>
+    <color name="trimble_most_likely_action_gray">#666666</color>
+    <color name="trimble_button_dark_gray">#474747</color>
+    <color name="trimble_text_yellow">#ffbb33</color>
+    <color name="trimble_text_gray">#666666</color>
+    <color name="trimble_text_light_gray">#DBDBDB</color>
+    <color name="trimble_text_white">#ffffff</color>
+    <color name="trimble_text_red">#ff0000</color>
+    <color name="trimble_text_blue">#4AB1FF</color>
+    <color name="trimble_login_button_green">#669900</color>
+    <color name="trimble_setup_device_text_blue">#4ab1ff</color>
+    <color name="trimble_emergency_icon_red">#cc0000</color>
+    <color name="trimble_dialog_background_gray">#252525</color>
+    <color name="trimble_gray">#CCCCCC</color>
+
+    <!-- Drawable colors for button pressed actions -->
+    <drawable name="button_white">#ffffffff</drawable>
+    <drawable name="button_yellow">#ffbb33</drawable>
+    <drawable name="button_gray">#474747</drawable>
+    <drawable name="button_medium_gray">#535353</drawable>
+    <drawable name="button_light_gray">#666666</drawable>
+    <drawable name="button_blue">#005596</drawable>
+    <drawable name="button_red">#cc0000</drawable>
+    <drawable name="button_green">#669900</drawable>
+    <drawable name="button_black">#ff000000</drawable>
+    <drawable name="button_dark_gray">#252525</drawable>
+
+    <!-- Button emboss colors -->
+    <color name="button_emboss_top_gray">#7c7376</color>
+    <color name="button_emboss_top_blue">#007ec3</color>
+    <color name="button_emboss_top_red">#FF0000</color>
+    <color name="button_emboss_top_green">#9AD400</color>
+    <color name="button_emboss_bottom">@android:color/black</color>
+
+    <!-- Button Badge Colors -->
+    <color name="button_badge_background">#99CC00</color>
+
+    <!--List view divider-->
+    <color name="dialog_list_view_divider">#9f9f9f</color>
+    <color name="dialog_list_view_divider_dark">#404040</color>
+
+    <!--Alert background colors-->
+    <color name="alert_cancel_blue">#00467F</color>
+    <color name="alert_cancel_red">#A00000</color>
+
+    <!-- Wave Standard Mobile App Colors -->
+    <color name="dark_blue_black">#131B30</color>
+
+    <!-- Communicator ActionBar Defaults -->
+    <color name="communicator_action_bar_selected">#1F8FC5</color>
+    <color name="communicator_action_bar_dark">#303030</color>
+    <color name="communicator_action_bar_dark_border">#191919</color>
+    <color name="communicator_action_bar_dark_text_color">#FFFFFF</color>
+    <color name="communicator_action_bar_dark_item_selected">#575757</color>
+    <color name="communicator_action_bar_separator">#7D7D7D</color>
+    <color name="communicator_action_bar_dark_separator">#4F4F4F</color>
+    <color name="communicator_action_bar_very_dark_separator">#404040</color>
+    <color name="communicator_action_bar_current_entity_background">#FFFF00</color>
+    <color name="communicator_action_bar_current_entity_text">#000000</color>
+    <color name="communicator_action_bar_talking_or_listening">#02B31F</color>
+
+    <!-- Communicator ActionBar Lollipop Settings -->
+    <color name="communicator_action_bar_dark_lollipop">#EFEFEF</color>
+    <color name="communicator_action_bar_dark_border_lollipop">#BDBDBD</color>
+    <color name="communicator_action_bar_dark_separator_lollipop">#D7D7D7</color>
+    <color name="communicator_action_bar_dark_text_color_lollipop">#000000</color>
+    <color name="communicator_action_bar_very_dark_separator_lollipop">#E6E6E6</color>
+    <color name="communicator_action_bar_dark_item_selected_lollipop">#DEDEDE</color>
+
+    <!-- Communicator Contact Filter Keypad Options-->
+    <color name="communicator_contact_filter_keypad_button_selected">#FFBB33</color>
+    <color name="communicator_contact_filter_keypad_button_unselected">#535353</color>
+
+    <!-- WiFi supplicant states-->
+    <color name="wifi_supplicant_state_uninitialized">#006666</color>
+    <color name="wifi_supplicant_state_invalid">#999999</color>
+    <color name="wifi_supplicant_state_dormant">#666666</color>
+    <color name="wifi_supplicant_state_interface_disabled">#9966ff</color>
+    <color name="wifi_supplicant_state_inactive">#000000</color>
+    <color name="wifi_supplicant_state_disconnected">#cc0033</color>
+    <color name="wifi_supplicant_state_scanning">#00cccc</color>
+    <color name="wifi_supplicant_state_group_handshake">#ffcccc</color>
+    <color name="wifi_supplicant_state_four_way_handshake">#ff9999</color>
+    <color name="wifi_supplicant_state_associating">#ff9900</color>
+    <color name="wifi_supplicant_state_associated">#ffcc00</color>
+    <color name="wifi_supplicant_state_authenticating">#cccc00</color>
+    <color name="wifi_supplicant_state_completed">#339900</color>
+
+    <!-- VLB Dialog states -->
+    <color name="vlb_highlight_current_truck">#FFFF66</color>
+</resources>

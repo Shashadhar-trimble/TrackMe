@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="hackathon.trimble.trackme.ScanQRCodeFragment">
+
+    <LinearLayout android:id="@+id/ContentLayout"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/scanContent"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/aggregate_ticket_edit_text_size"
+            android:text="Hackathan 2017\n Sidney\n Naveen\n Shashadhar"
+
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Samsung Tab A, 768x1024, 160ppi (mdpi) (768/(160/160) = 768) -->
+
+    <!-- Button badge margins -->
+    <integer name="dashboard_button_badge_margin_top">14</integer>
+    <integer name="dashboard_button_badge_margin_end">14</integer>
+    <integer name="view_pager_button_badge_margin_top">6</integer>
+    <integer name="view_pager_button_badge_margin_end">6</integer>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Action Bar sizes -->
+    <dimen name="action_bar_communicator_voice_field_size">500dp</dimen>
+    
+    <!-- Delivery screen sizes -->
+    <dimen name="delivery_info_text_size">28sp</dimen>
+
+    <!-- Driver Options screen sizes -->
+    <dimen name="driver_options_button_title_text_size">34sp</dimen>
+
+    <!--Login dimensions-->
+    <dimen name="login_edit_text_height">50dp</dimen>
+    <dimen name="login_button_height">80dp</dimen>
+    <dimen name="login_pre_check_text_size">24sp</dimen>
+    <dimen name="login_btn_spacing">10dp</dimen>
+    <dimen name="login_button_spacing">12dp</dimen>
+    <dimen name="login_checkbox_padding">10dp</dimen>
+    <dimen name="login_trimble_icon_height">172dp</dimen>
+    <dimen name="login_trimble_icon_margin_top">60dp</dimen>
+    <dimen name="login_trimble_icon_margin_bottom">50dp</dimen>
+    <dimen name="login_land_container_spacing">100dp</dimen>
+
+    <!-- Change PIN dimensions -->
+    <dimen name="changepin_trimble_icon_margin_top">60dp</dimen>
+    <dimen name="changepin_trimble_icon_margin_bottom">60dp</dimen>
+
+    <!--Dialog dimensions-->
+    <dimen name="dialog_title_text_size">34sp</dimen>
+    <dimen name="dialog_content_text_size">34sp</dimen>
+
+    <!--VLB Dialog dimensions-->
+    <dimen name="dialog_vlb_end_margin">8dp</dimen>
+    <dimen name="dialog_vlb_title_text_size">34sp</dimen>
+    <dimen name="dialog_vlb_site_text_size">30sp</dimen>
+    <dimen name="dialog_vlb_truck_name_text_size">30sp</dimen>
+    <dimen name="dialog_vlb_label_text_size">22sp</dimen>
+    <dimen name="dialog_vlb_truck_name_width">250dp</dimen>
+    <dimen name="dialog_vlb_alert_margin">0dp</dimen>
+    <dimen name="dialog_vlb_refresh_margin">45dp</dimen>
+
+    <!--Report audio message dialog related dimensions-->
+    <dimen name="disclaimer_dialog_content_text_size">24sp</dimen>
+    <dimen name="dialog_report_audio_message_content_text_size">34sp</dimen>
+</resources>

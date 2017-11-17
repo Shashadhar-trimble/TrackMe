@@ -1,0 +1,158 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) here.
+    -->
+
+    <!-- General button dimensions -->
+    <dimen name="general_button_text_size">40sp</dimen>
+    <dimen name="general_button_height">98dp</dimen>
+    <dimen name="general_button_icon_size">60dp</dimen>
+    <dimen name="general_button_vertical_spacing">10dp</dimen>
+
+    <!--General dimensions-->
+    <dimen name="general_label_text_size">32sp</dimen>
+    <dimen name="general_sub_label_text_size">24sp</dimen>
+
+    <!--Splash dimensions-->
+    <dimen name="splash_trimble_main_icon_height">72dp</dimen>
+    <dimen name="splash_trimble_bottom_icon_margin">42dp</dimen>
+    <dimen name="splash_trimble_bottom_icon_height">84dp</dimen>
+
+    <!--Login dimensions-->
+    <dimen name="login_trimble_icon_height">172dp</dimen>
+    <dimen name="login_trimble_icon_margin_top">92dp</dimen>
+    <dimen name="login_trimble_icon_margin_bottom">60dp</dimen>
+    <dimen name="login_land_container_spacing">100dp</dimen>
+    <dimen name="login_edit_text_height">80dp</dimen>
+    <dimen name="login_button_height">100dp</dimen>
+    <dimen name="login_button_spacing">12dp</dimen>
+    <dimen name="login_pre_check_text_size">40sp</dimen>
+    <dimen name="login_checkbox_padding">10dp</dimen>
+
+    <!-- Change pin Dimensions -->
+
+    <dimen name="changepin_trimble_icon_margin_top">60dp</dimen>
+    <dimen name="changepin_trimble_icon_margin_bottom">92dp</dimen>
+
+    <!--License dimensions-->
+    <dimen name="license_land_container_spacing">72dp</dimen>
+
+    <!-- Dashboard dimensions -->
+    <dimen name="dashboard_button_title_text_size">58sp</dimen>
+    <dimen name="dashboard_button_subtitle_text_size">30sp</dimen>
+    <dimen name="dashboard_button_spacing">4dp</dimen>
+    <dimen name="dashboard_border_spacing">24dp</dimen>
+    <dimen name="dashboard_button_image_size">130dp</dimen>
+    <dimen name="dashboard_button_title_left_margin_size">126dp</dimen>
+    <dimen name="dashboard_landscape_container_spacing">6dp</dimen>
+
+    <!-- Ticket view_pager dimensions -->
+    <dimen name="status_button_title_text_size">42sp</dimen>
+    <dimen name="status_button_title_top_pad">2dp</dimen>
+    <dimen name="status_button_subtitle_text_size">22sp</dimen>
+    <dimen name="status_button_subtitle_top_pad">70dp</dimen>
+    <dimen name="status_button_spacing">2dp</dimen>
+    <dimen name="status_main_title_text_size">60sp</dimen>
+    <dimen name="status_main_subtitle_text_size">38sp</dimen>
+    <dimen name="status_main_timer_text_size">28sp</dimen>
+    <dimen name="status_image_align_top_pad">8dp</dimen>
+    <dimen name="status_image_align_right_pad">20dp</dimen>
+    <dimen name="status_image_height_width_size">40dp</dimen>
+
+    <!-- Bottom bar layout dimensions -->
+    <dimen name="bottom_bar_height">119dp</dimen>
+    <dimen name="bottom_bar_button_height">104dp</dimen>
+    <dimen name="bottom_bar_icon_height">104dp</dimen>
+    <dimen name="bottom_bar_icon_width">104dp</dimen>
+
+    <!-- Top bar layout dimensions -->
+    <dimen name="top_bar_height">77dp</dimen>
+    <dimen name="top_bar_button_height">65dp</dimen>
+    <dimen name="top_bar_text_pad_top_bottom">20dp</dimen>
+    <dimen name="top_bar_text_pad_right_left">10dp</dimen>
+    <dimen name="top_bar_text_size">24sp</dimen>
+
+    <!-- Left bar layout dimensions -->
+    <dimen name="left_bar_width">118dp</dimen>
+    <dimen name="left_bar_button_width">104dp</dimen>
+    <dimen name="left_bar_icon_height">104dp</dimen>
+    <dimen name="left_bar_icon_width">104dp</dimen>
+
+    <!-- Finalize delivery dimensions -->
+    <dimen name="finalize_delivery_screen_text_size">48sp</dimen>
+    <dimen name="finalize_delivery_material_units_text_size">28sp</dimen>
+    <dimen name="finalize_delivery_vertical_spacer_size">36dp</dimen>
+
+    <!-- Messages dimensions -->
+    <dimen name="message_item_image_height_width_size">88dp</dimen>
+    <dimen name="message_item_date_text_size">28sp</dimen>
+    <dimen name="message_item_summary_text_size">24sp</dimen>
+
+    <dimen name="message_view_image_height_width_size">88dp</dimen>
+    <dimen name="message_view_date_text_size">28sp</dimen>
+    <dimen name="message_view_summary_text_size">24sp</dimen>
+    <dimen name="message_view_message_text_size">36sp</dimen>
+
+    <dimen name="message_view_content_spacing_size">16dp</dimen>
+    <dimen name="message_view_scroll_view_margin_bottom">72dp</dimen>
+    <dimen name="message_dim_list_button_spacing">4dp</dimen>
+
+    <!-- Preferences dimensions -->
+    <dimen name="preferences_item_left_padding">8dp</dimen>
+    <dimen name="preferences_item_height">76dp</dimen>
+    <dimen name="preferences_item_text_size">24sp</dimen>
+    <dimen name="preferences_category_text_size">24sp</dimen>
+    <dimen name="preferences_category_title_padding">8dp</dimen>
+    <dimen name="preferences_category_bottom_padding">10dp</dimen>
+
+    <!-- Delivery dimensions -->
+    <dimen name="delivery_info_text_size">28sp</dimen>
+    <dimen name="delivery_get_directions_button_text_size">34sp</dimen>
+    <dimen name="delivery_info_label_padding">14dp</dimen>
+
+    <!-- Delivery Status dimensions -->
+    <dimen name="delivery_status_title_text_size">28sp</dimen>
+    <dimen name="delivery_status_info_text_size">26sp</dimen>
+
+    <!-- Aggregate ticket dimensions -->
+    <dimen name="aggregate_ticket_edit_text_size">36sp</dimen>
+    <dimen name="aggregate_ticket_edit_text_padding">8dp</dimen>
+    <dimen name="aggregate_ticket_units_text_size">24sp</dimen>
+    <dimen name="aggregate_ticket_input_field_width">264dp</dimen>
+
+    <!--Emergency screen dimensions-->
+    <dimen name="emergency_button_spacing">12dp</dimen>
+
+    <!--Talk dimensions-->
+    <dimen name="ptt_button_height">164dp</dimen>
+    <dimen name="channel_list_item_height">132dp</dimen>
+    <dimen name="channel_list_item_image_margin">20dp</dimen>
+    <dimen name="contact_list_item_height">132dp</dimen>
+    <dimen name="contact_list_item_image_margin">20dp</dimen>
+    <dimen name="recent_list_item_height">132dp</dimen>
+    <dimen name="recent_list_item_image_margin">20dp</dimen>
+    <dimen name="filter_contacts_text_size">32sp</dimen>
+    <dimen name="list_item_padding">10sp</dimen>
+    <dimen name="communicator_action_bar_text_view_width">100dp</dimen>
+
+    <!--Dialog dimensions-->
+    <dimen name="dialog_title_text_size">34sp</dimen>
+    <dimen name="dialog_content_text_size">34sp</dimen>
+
+    <!--VLB dialog dimensions-->
+    <dimen name="dialog_vlb_end_margin">4dp</dimen>
+    <dimen name="dialog_vlb_start_end_margin">18dp</dimen>
+    <dimen name="dialog_vlb_title_text_size">34sp</dimen>
+    <dimen name="dialog_vlb_site_text_size">28sp</dimen>
+    <dimen name="dialog_vlb_truck_name_text_size">23sp</dimen>
+    <dimen name="dialog_vlb_label_text_size">18sp</dimen>
+    <dimen name="dialog_vlb_truck_name_width">150dp</dimen>
+    <dimen name="dialog_vlb_refresh_margin">34dp</dimen>
+
+    <!--Report audio message dialog related dimensions-->
+    <dimen name="disclaimer_dialog_content_text_size">34sp</dimen>
+    <dimen name="dialog_report_audio_message_content_text_size">34sp</dimen>
+
+</resources>

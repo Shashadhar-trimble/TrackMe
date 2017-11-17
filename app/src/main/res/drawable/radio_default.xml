@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <stroke android:color="@color/dialog_list_view_divider" android:width="2dp"/>
+    <size android:width="@dimen/preferences_radio_width_height" android:height="@dimen/preferences_radio_width_height"/>
+</shape> 
+        

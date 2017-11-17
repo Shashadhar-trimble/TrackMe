@@ -1,0 +1,711 @@
+<resources>
+    <string name="app_name">TrackMe</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <!--Common strings (Simple commonly used words)-->
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="ok">OK</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="na">N/A</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_information">Enter Information</string>
+    <string name="test">test</string>
+    <string name="select">Select</string>
+    <string name="unselected">Unselected</string>
+    <string name="done">Done</string>
+    <string name="dbm">dBm</string>
+    <string name="warning">Warning</string>
+    <string name="empty_string" translatable="false" />
+    <string name="number_0" translatable="false">0</string>
+
+    <!--Action Menu strings-->
+    <string name="action_bar_menu_driver_options">Driver Options</string>
+    <string name="action_bar_menu_network_connections">Network Connections</string>
+    <string name="action_bar_menu_settings">Settings</string>
+    <string name="action_bar_menu_vehicle_bus">Vehicle</string>
+    <string name="action_bar_menu_about">About</string>
+    <string name="action_bar_menu_help">Help</string>
+    <string name="action_bar_menu_logout">Log Out</string>
+    <string name="action_bar_menu_cellular">Cellular Connection Status</string>
+    <string name="action_bar_menu_wireless">Wireless Connection Status</string>
+    <string name="action_bar_menu_gps">GPS Connection Status</string>
+    <string name="action_bar_menu_connect_headset">Connect BT Headset</string>
+    <string name="action_bar_menu_disconnect_headset">Disconnect BT Headset</string>
+    <string name="action_bar_menu_vlb_launcher">Show Virtual Load Board</string>
+    <string name="action_bar_menu_emergency">Emergency</string>
+    <string name="action_bar_menu_dvir_hos_launcher">Launch eFS</string>
+    <string name="action_bar_menu_connect_talk">Connect Talk Service</string>
+    <string name="action_bar_menu_disconnect_talk">Disconnect Talk Service</string>
+    <string name="action_bar_menu_active_nav_mute">Active Navigation Mute</string>
+    <string name="action_bar_menu_cradle">TVG Cradle Status</string>
+    <string name="action_bar_menu_communicator_channels">Channels</string>
+    <string name="action_bar_menu_communicator_recent_channels">Recent Channels</string>
+    <string name="action_bar_menu_communicator_contacts">Contacts</string>
+    <string name="action_bar_menu_communicator_recent_contacts">Recent Contacts</string>
+    <string name="action_bar_menu_communicator_see_all">See all</string>
+    <string name="action_bar_menu_receipt">Receipt</string>
+    <string name="action_bar_menu_finalize_delivery">Finalize Delivery</string>
+    <string name="action_bar_menu_new">New</string>
+    <string name="action_bar_menu_signature">Signature</string>
+
+    <!--Dialog (Title, Content, Response) strings-->
+    <string name="dialog_title_generic" translatable="false">Dialog title</string>
+    <string name="dialog_content_generic" translatable="false">Dialog content</string>
+    <string name="dialog_error_generic" translatable="false">Dialog error</string>
+    <string name="dialog_title_new_ticket">New Ticket</string>
+    <string name="dialog_title_cancel_ticket">Cancel Ticket</string>
+    <string name="dialog_title_update_ticket">Update Ticket</string>
+    <string name="dialog_title_cancel_home_run">Home Run Unassigned</string>
+    <string name="dialog_title_cancel_deadhead">Cancel Dead Head Ticket</string>
+    <string name="dialog_title_site_navigation">Need Directions?</string>
+    <string name="dialog_title_new_message">New Message</string>
+    <string name="dialog_title_feature_not_enabled">Feature Not Enabled</string>
+    <string name="dialog_title_new_destination">New Destination</string>
+    <string name="dialog_title_dead_head_ticket">Dead Head Ticket</string>
+    <string name="dialog_title_home_run_ticket">Home Run Ticket</string>
+    <string name="dialog_title_dead_head_home_run_ticket">Home Run Ticket</string>
+    <string name="dialog_title_update_ticket_home_run">Update Ticket - Home Run</string>
+    <string name="dialog_title_update_ticket_return_plant">Update Ticket - Return Plant Changed</string>
+    <string name="dialog_title_update_ticket_return_plant_home_run">Update Ticket - Return Plant Changed and Home Run</string>
+    <string name="dialog_title_begin_home_run">Home Run Assigned</string>
+    <string name="dialog_title_services_unavailable">Services Unavailable</string>
+    <string name="dialog_title_application_reset">Application Reset</string>
+    <string name="dialog_title_network_timeout">Network Timeout</string>
+    <string name="dialog_title_support_not_available">Support Not Available</string>
+    <string name="dialog_title_gps_disabled">GPS Disabled</string>
+    <string name="dialog_title_invalid_information">Invalid Information</string>
+    <string name="dialog_title_not_connected">Not Connected</string>
+    <string name="dialog_title_no_results_found">No Results</string>
+    <string name="dialog_title_request_failed">Request Failed</string>
+    <string name="dialog_title_registration_failed">Device Registration Failed</string>
+    <string name="dialog_title_login_failed">Login Failed</string>
+    <string name="dialog_title_feature_not_available">Feature Not Available</string>
+    <string name="dialog_title_hibernation_mode_enabled">Hibernation Mode Enabled</string>
+    <string name="dialog_title_home_site_list">Home Site List</string>
+    <string name="dialog_title_loading_zone_list">Loading Zone List</string>
+    <string name="dialog_title_job_site_list">Job Site List</string>
+    <string name="dialog_content_none">None</string>
+    <string name="dialog_title_connection_status_cellular">Cellular Connection Status</string>
+    <string name="dialog_title_connection_status_wifi">WiFi Connection Status</string>
+    <string name="dialog_title_connection_status_gps">GPS Connection Status</string>
+    <string name="dialog_title_connection_status_cradle">TVG Cradle Status</string>
+    <string name="dialog_title_alert_message">Alert Message</string>
+    <string name="dialog_title_change_pin_failed">Change PIN Failed</string>
+    <string name="dialog_title_operation_mode">Operation Mode</string>
+    <string name="dialog_title_in_service_rejection">In Service Rejection</string>
+    <string name="dialog_title_active_navigation_error">Active Navigation Error</string>
+    <string name="dialog_content_active_navigation_disabled">Active Navigation Disabled</string>
+    <string name="dialog_content_new_message_received">You have received a new message from dispatch.</string>
+    <string name="dialog_content_feature_not_enabled">This feature is not enabled.  Please contact your system administrator for further assistance</string>
+    <string name="dialog_content_voice_recognition_services_unavailable">Voice recognition services are unavailable.</string>
+    <string name="dialog_content_application_reset">All tickets have been cleared and a request has been sent for the latest ticket information.</string>
+    <string name="dialog_content_network_timeout">A timeout occurred.  Please try again later.</string>
+    <string name="dialog_content_feedback_email">There is no configured feedback email at this time.</string>
+    <string name="dialog_content_gps_disabled">Please enable GPS on this device.</string>
+    <string name="dialog_content_pin_empty_pin">Please fill in %1$s field before proceeding</string>
+    <string name="dialog_content_pin_empty_all">Please fill in all fields before proceeding</string>
+    <string name="dialog_content_unable_to_process_request">Unable to process your request at this time.</string>
+    <string name="dialog_content_incorrect_pin">The pin you entered does not match your current pin.</string>
+    <string name="dialog_content_pins_do_not_match">The pins you entered do not match.</string>
+    <string name="dialog_content_not_connected">You are not currently connected.</string>
+    <string name="dialog_content_not_connected_to_trimfleet">You are not currently connected to the TrimFleet server.</string>
+    <string name="dialog_content_disconnected">You have been disconnected.</string>
+    <string name="dialog_content_no_results_found">Unable to find any results.</string>
+    <string name="dialog_content_in_service_failed">Unable to go in service at this time.</string>
+    <string name="dialog_content_out_of_service_failed">Unable to go out of service at this time.</string>
+    <string name="dialog_content_directions_unavailable">Unable to provide directions at this time.</string>
+    <string name="dialog_content_enter_license_key">You must enter a valid license key.</string>
+    <string name="dialog_content_login_failed">Invalid user credentials, please contact your administrator.</string>
+    <string name="dialog_content_invalid_ticket_information">You must enter both a ticket and order number.</string>
+    <string name="dialog_content_feature_requires_ticket">This feature requires an active ticket.</string>
+    <string name="dialog_content_precheck_required">You must confirm that the pre-check inspection has been completed.</string>
+    <string name="dialog_content_driver_id_and_pin_required">You must enter both your driver id and pin.</string>
+    <string name="dialog_content_driver_id_required">You must enter your driver id.</string>
+    <string name="dialog_content_invalid_phone_number">There is no configured support phone number at this time.</string>
+    <string name="dialog_content_no_phone_calls">This device is not configured to make phone calls.</string>
+    <string name="dialog_content_invalid_support_website">There is no configured support website at this time.</string>
+    <string name="dialog_content_invalid_message_entered">You must enter a valid message.</string>
+    <string name="dialog_content_hibernation_mode_login_conflict">Hibernation mode is currently enabled. Logging in will log out driver %1$s.  Do you want to continue logging in?</string>
+    <string name="dialog_content_no_sites_available">No sites available.</string>
+    <string name="dialog_content_request_user_to_enable_gps">GPS is disabled on this device. Would you like to enable GPS from the settings screen?</string>
+    <string name="dialog_content_change_pin_failed">Unable to change PIN, please contact your administrator.</string>
+    <string name="dialog_content_cradle_status_connected">Connected to device %1$s</string>
+    <string name="dialog_content_cradle_status_disconnected">Disconnected</string>
+    <string name="dialog_content_auto_finalize_ticket">Your current ticket was not finalized. It will be auto finalized.</string>
+    <string name="dialog_content_in_service_rejection">The In Service Request has been rejected.</string>
+    <string name="dialog_content_in_service_rejection_reason_unknown">Reason is unknown</string>
+    <string name="dialog_content_in_service_rejection_reason_too_early">Reason is too early</string>
+    <string name="dialog_content_site_unavailable_for_navigation">Unable to find a valid job site or home site for active navigation.</string>
+    <string name="dialog_content_invalid_ticket_weight_information">You must enter a gross weight greater than the net weight.</string>
+    <string name="dialog_title_return_run_request">Return to</string>
+    <string name="dialog_content_return_run_request">%1$s</string>
+    <string name="dialog_content_cancel_ticket_confirmation">Are you sure you want to cancel this ticket?</string>
+    <string name="dialog_title_delete_access_point">Delete WiFi Access Point</string>
+    <string name="dialog_content_delete_access_point">Delete the access point from the scan list?</string>
+    <string name="dialog_title_select_valid_wifi_access_point">Connect to WiFi</string>
+    <string name="dialog_content_select_valid_wifi_access_point">You must first select a valid WiFi access point</string>
+    <string name="dialog_title_configure_wifi_access_point">WiFi Configuration</string>
+    <string name="dialog_content_configure_wifi_access_point">You must first utilize settings to forget the selected WiFi access point. Continue?</string>
+    <string name="dialog_title_configure_location_access">Location Configuration</string>
+    <string name="dialog_content_configure_location_access">You must utilize settings to enable location.</string>
+    <string name="dialog_content_alert_message">You have received an alert message</string>
+    <string name="dialog_title_map_update_request_title">Map Data Update Request</string>
+    <string name="dialog_title_map_update_request_content">Would you like to check for available map data updates to download?</string>
+    <string name="dialog_title_driver_option_break">Question</string>
+    <string name="dialog_content_driver_option_break">Do you want to go on break\nor off of break?</string>
+    <string name="dialog_response_acknowledge">Acknowledge</string>
+    <string name="dialog_response_read">Read</string>
+    <string name="dialog_response_read_and_reply">Read and Reply</string>
+    <string name="dialog_response_not_now">Not Now</string>
+    <string name="dialog_title_wifi_mac_address_override">WiFi Mac Address Override</string>
+    <string name="dialog_content_wifi_mac_address_override">Please input an override for the WiFi Mac Address</string>
+    <string name="dialog_hint_wifi_mac_address_override">Format: 12:34:56:78:90:AB</string>
+    <string name="dialog_title_shutdown_scheduled">Shutdown Scheduled</string>
+    <string name="dialog_content_shutdown_scheduled">The vehicle ignition has been turned off.\n\nThe tablet will automatically shutdown in %1$d seconds.</string>
+    <string name="dialog_title_shutdown_canceled">Shutdown Canceled</string>
+    <string name="dialog_content_shutdown_canceled">The vehicle ignition has been turned on.\n\nThe previously scheduled shutdown has been canceled.</string>
+
+    <string name="dialog_error_leftover_material">Value should be between 0 and 163.84</string>
+    <string name="dialog_title_leftover_material">Error</string>
+
+    <string name="dialog_title_microphone_disabled">Warning</string>
+    <string name="dialog_content_microphone_disabled">A microphone issue has been detected.\n\nPlease release the PTT button and then press OK.</string>
+
+    <string name="dialog_title_dvir_hos_info">DVIR HoS</string>
+    <string name="dialog_title_dvir_hos_warning">DVIR HoS Warning</string>
+    <string name="dialog_title_dvir_hos_sign_in_failed">DVIR HoS Sign In Failed</string>
+    <string name="dialog_title_dvir_hos_sign_out_failed">DVIR HoS Sign Out Failed</string>
+    <string name="dialog_title_dvir_hos_start_break_failed">DVIR HoS Start Break Failed</string>
+    <string name="dialog_title_dvir_hos_end_break_failed">DVIR HoS End Break Failed</string>
+    <string name="dialog_content_dvir_hos_feature_disabled">The DVIR HoS feature is disabled.</string>
+    <string name="dialog_content_dvir_hos_feature_disconnected">The eFS application appears to be disconnected from the TFMA data service.\n\nYou may need to capture your hours with paper and pencil.</string>
+    <string name="dialog_content_dvir_hos_feature_missing_dependencies">The ISE eFS application does not appear to be installed.</string>
+    <string name="dialog_content_dvir_hos_driver_id_feature_disabled">Driver ID is disabled.\n\nPlease contact your administrator.</string>
+    <string name="dialog_content_dvir_hos_vehicle_bus_connection_status">VBus Connection Status</string>
+    <string name="dialog_content_dvir_hos_vehicle_bus_connection_status_connected">Connected</string>
+    <string name="dialog_content_dvir_hos_vehicle_bus_connection_status_disconnected">Disconnected</string>
+    <string name="dialog_content_dvir_hos_continue_driving_prompt">Your current status is \'On Duty (Driving)\', but the vehicle does not appear to have been in motion for at least 5 minutes.\n\nDo you want to change your status?</string>
+
+    <!--Advanced DIM Message Dialog strings-->
+    <string name="dialog_title_enter_required_information">Enter required information</string>
+    <string name="dialog_title_water_added">Water Added Message…</string>
+    <string name="dialog_content_water_added_gallons">How many gallons of water?</string>
+    <string name="dialog_content_water_added_liters">How many liters of water?</string>
+    <string name="dialog_title_fuel_added">Fuel Added Message…</string>
+    <string name="dialog_content_fuel_added_gallons">How many gallons of fuel?</string>
+    <string name="dialog_content_fuel_added_liters">How many liters of fuel?</string>
+    <string name="dialog_title_oil_added">Oil Added Message…</string>
+    <string name="dialog_content_oil_added_quarts">How many quarts of oil?</string>
+    <string name="dialog_content_oil_added_liters">How many liters of oil?</string>
+    <string name="dialog_title_order_back">Order Back Message…</string>
+    <string name="dialog_content_order_back_cubic_yards">Amount to Order Back in cubic yards?</string>
+    <string name="dialog_content_order_back_cubic_meters">Amount to Order Back in cubic meters?</string>
+    <string name="dialog_error_advanced_dim">Error: Value out of range</string>
+
+
+    <!-- Map Region Selection Dialog -->
+    <string name="dialog_title_map_region_selection">Select a Map Region</string>
+    <string name="map_data_region_africa">Africa</string>
+    <string name="map_data_region_asia">Asia</string>
+    <string name="map_data_region_europe">Europe</string>
+    <string name="map_data_region_middle_east">Middle East</string>
+    <string name="map_data_region_north_america">North America</string>
+    <string name="map_data_region_oceania">Oceania</string>
+    <string name="map_data_region_south_america">South America</string>
+
+
+    <string name="dialog_talk_service_disconnect">Do you want to disconnect TrimFleet Communicator?</string>
+    <string name="dialog_bt_headset_disconnect">Do you want to disconnect the Bluetooth headset?</string>
+    <string name="dialog_keypad_option_numeric">Numeric Keypad</string>
+    <string name="dialog_keypad_option_alphanumeric">Alpha Numeric Keypad</string>
+    <string name="dialog_keypad_option_title">Please choose a preferred keyboard</string>
+    <string name="dialog_google_play_services">Google Play Services needs to be updated/enabled to access Google Maps</string>
+
+    <!-- Google Play Services unavailable dialog strings -->
+    <string name="google_play_unavailable_dialog_title_missing">Google Play Services are missing</string>
+    <string name="google_play_unavailable_dialog_content_missing">TrimFleet Mobile will not work properly unless Google Play Services are installed on this device.  Please contact an administrator for assistance.</string>
+    <string name="google_play_unavailable_dialog_title_disabled">Google Play Services are disabled</string>
+    <string name="google_play_unavailable_dialog_content_disabled">TrimFleet Mobile will not work properly unless Google Play Services are enabled on this device.  Please contact an administrator for assistance.</string>
+    <string name="google_play_unavailable_dialog_title_invalid">Google Play Services are not supported</string>
+    <string name="google_play_unavailable_dialog_content_invalid">TrimFleet Mobile relies on Google Play Services, which are not supported by your device.  Please contact an administrator for assistance.</string>
+    <string name="google_play_unavailable_dialog_title_update_required">Update Google Play Services</string>
+    <string name="google_play_unavailable_dialog_content_update_required">TrimFleet Mobile will not work properly unless you update Google Play Services.  Please contact an administrator for assistance.</string>
+    <string name="google_play_unavailable_dialog_title_updating">Google Play Services are updating</string>
+    <string name="google_play_unavailable_dialog_content_updating">TrimFleet Mobile will not work properly without Google Play Services, which are currently updating.  Please contact an administrator for assistance.</string>
+    <string name="google_play_unavailable_dialog_title_other">Google Play Services are unavailable</string>
+    <string name="google_play_unavailable_dialog_content_other">TrimFleet Mobile will not work properly without Google Play Services, which are not currently available.  Please contact an administrator for assistance.</string>
+    <string name="google_play_unavailable_dialog_content_suppress">%1$s\n\nStop showing this message?</string>
+
+    <!--Progress Dialog strings-->
+    <string name="progress_dialog_changing_pin">Changing PIN…</string>
+    <string name="progress_dialog_registering_device">Registering Device…</string>
+    <string name="progress_dialog_sending_request">Sending Request…</string>
+    <string name="progress_dialog_logging_in">Logging in…</string>
+    <string name="progress_dialog_logging_out">Logging out…</string>
+    <string name="progress_dialog_searching">Searching…</string>
+    <string name="progress_dialog_printing_please_wait">Printing, please wait…</string>
+    <string name="progress_dialog_starting_navigation">Starting Navigation…</string>
+    <string name="progress_dialog_stopping_navigation">Stopping Navigation…</string>
+
+    <!--Voice Recognition Dialog Strings-->
+    <string name="voice_recognition_dialog_title">Voice Recognition</string>
+    <string name="voice_recognition_dialog_content_default">Voice Recognition Started…</string>
+    <string name="voice_recognition_dialog_content_ready_for_speech">Please speak when ready…</string>
+    <string name="voice_recognition_dialog_content_beginning_of_speech">Listening…</string>
+    <string name="voice_recognition_dialog_content_buffer_received">Still listening…</string>
+    <string name="voice_recognition_dialog_content_end_of_speech">Listening complete.</string>
+    <string name="voice_recognition_dialog_content_error">Error Detected</string>
+    <string name="voice_recognition_dialog_content_recognizer_still_waiting">Still waiting…</string>
+    <string name="voice_recognition_dialog_content_recognizer_still_listening">Still listening…</string>
+    <string name="voice_recognition_dialog_content_error_audio">Audio Error</string>
+    <string name="voice_recognition_dialog_content_error_client">Client Error</string>
+    <string name="voice_recognition_dialog_content_error_insufficient_permissions">Insufficient Permissions</string>
+    <string name="voice_recognition_dialog_content_error_network">Network Error</string>
+    <string name="voice_recognition_dialog_content_error_network_timeout">Network Timeout</string>
+    <string name="voice_recognition_dialog_content_error_no_match">No Matches Found</string>
+    <string name="voice_recognition_dialog_content_error_recognizer_busy">Speech Recognizer Busy</string>
+    <string name="voice_recognition_dialog_content_error_server">Server Error</string>
+    <string name="voice_recognition_dialog_content_error_speech_timeout">Timeout Occurred</string>
+
+    <!--Toast strings-->
+    <string name="toast_paired_to_device">Paired to device</string>
+    <string name="toast_ticket_submitted">Ticket submitted</string>
+    <string name="toast_ticket_auto_submitted">Ticket automatically submitted</string>
+    <string name="toast_ticket_auto_submitted_fail">Failed to auto submit ticket. Information is missing.</string>
+    <string name="toast_bluetooth_not_available">Bluetooth is not available</string>
+    <string name="toast_qr_code_scan_completed">QR Code Scan Completed</string>
+    <string name="toast_qr_code_scan_failed">QR Code Scan Failed</string>
+    <string name="toast_clicked_message_item">Clicked on a message item</string>
+    <string name="toast_connected_device">Device connected</string>
+    <string name="toast_wifi_access_point_cleared">WiFi access point cleared</string>
+    <string name="toast_gps_provider_enabled">GPS provider enabled</string>
+    <string name="toast_check_configuration_success">Check Configuration Succeeded</string>
+    <string name="toast_check_configuration_failure">Check Configuration Failed</string>
+    <string name="toast_on_break_message_sent">A \'Go on Break\' request has been sent</string>
+    <string name="toast_off_break_message_sent">A \'Go off Break\' request has been sent</string>
+    <string name="toast_mac_address_override_already_defined">An override has already been defined!</string>
+    <string name="toast_mac_address_override_prompt_is_close">%1$d more tap(s) until you can override!</string>
+
+    <!--Login strings-->
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="login_setup_device">Setup device</string>
+    <string name="login_button_text">Log In</string>
+    <string name="login_driver_id_hint">Driver ID</string>
+    <string name="login_driver_pin_hint">Driver PIN</string>
+    <string name="login_finished_pre_check_inspection">Finished Pre-check Inspection</string>
+    <string name="change_pin_login">Change PIN after login</string>
+
+    <!--Change Pin strings-->
+    <string name="change_pin_button_text">Change PIN</string>
+    <string name="change_pin_current_pin_hint">Current PIN</string>
+    <string name="change_pin_new_pin_hint">New PIN</string>
+    <string name="change_pin_confirm_pin_hint">Confirm PIN</string>
+
+    <!--License strings-->
+    <string name="register_button_text">Register Device</string>
+    <string name="register_enter_license_key_hint">Enter license key</string>
+    <string name="register_scan_barcode">Scan Barcode</string>
+    <string name="register_select_device_api">Change URL</string>
+
+    <!-- Dashboard strings -->
+    <string name="dashboard_messages_text">Messages</string>
+    <string name="dashboard_delivery_text">Delivery</string>
+    <string name="dashboard_navigation_text">Navigation</string>
+    <string name="dashboard_status_text">Status</string>
+    <string name="dashboard_talk_text">Talk</string>
+    <string name="dashboard_driver_text">Driver</string>
+    <string name="dashboard_messages_update_text_singular">Unread</string>
+    <string name="dashboard_messages_update_text_plural">Unread</string>
+    <string name="dashboard_start_routing_text">Start Routing</string>
+    <string name="dashboard_pending_in_service">Pending In Service</string>
+    <string name="dashboard_pending_out_of_service">Pending Out of Service</string>
+    <string name="dashboard_dvir_hos_driver_id_button_apk_missing">eFS: APK Missing</string>
+    <string name="dashboard_dvir_hos_driver_id_button_disconnected">eFS: Disconnected</string>
+    <string name="dashboard_dvir_hos_driver_id_button_signed_out">eFS: Signed Out</string>
+    <string name="dashboard_dvir_hos_driver_id_button_driver_availability_ok">eFS: OK</string>
+    <string name="dashboard_dvir_hos_driver_id_button_driver_availability_warn">eFS: Low</string>
+    <string name="dashboard_dvir_hos_driver_id_button_driver_availability_error">eFS: Violation</string>
+
+    <!--Emergency strings-->
+    <string name="emergency_send_button_text">Emergency</string>
+
+    <!-- View Pager strings -->
+    <string name="view_pager_tab_ticket">Ticket</string>
+    <string name="view_pager_tab_details">Details</string>
+    <string name="view_pager_tab_status">Status</string>
+    <string name="view_pager_tab_material">Material</string>
+    <string name="view_pager_tab_notes">Notes</string>
+    <string name="view_pager_tab_map">Map</string>
+    <string name="view_pager_tab_address">Address</string>
+    <string name="view_pager_tab_favorites">Favorites</string>
+    <string name="view_pager_tab_channels">Channels</string>
+    <string name="view_pager_tab_contacts">Contacts</string>
+    <string name="view_pager_tab_recents">Recents</string>
+
+    <!-- Delivery (Ticket, Details, Status, Material, Notes) screens -->
+    <string name="delivery_ticket_order_label_text">Order</string>
+    <string name="delivery_ticket_number_label_text">Ticket</string>
+    <string name="delivery_ticket_time_label_text">Delivery Time</string>
+    <string name="delivery_ticket_customer_label_text">Customer</string>
+    <string name="delivery_ticket_submit_button_text">Submit</string>
+    <string name="delivery_ticket_cancel_button_text">Cancel</string>
+    <string name="delivery_ticket_edit_button_text">Edit</string>
+    <string name="delivery_ticket_no_ticket_text">None</string>
+    <string name="delivery_ticket_no_address_text">No Address</string>
+    <string name="delivery_ticket_instructions_label">Instructions</string>
+    <string name="delivery_ticket_plant_label_text">Plant</string>
+    <string name="delivery_ticket_terms_label_text">Terms</string>
+    <string name="delivery_ticket_load_number_label_text">Load</string>
+
+    <string name="delivery_details_next_truck_button_text">Next Truck</string>
+    <string name="delivery_details_truck_in_front_label_text">Truck in Front</string>
+    <string name="delivery_details_truck_plus_one_label_text">Truck Plus One</string>
+    <string name="delivery_details_agg_tare_label_text">Tare</string>
+    <string name="delivery_details_agg_gross_label_text">Gross</string>
+    <string name="delivery_details_agg_net_label_text">Net</string>
+    <string name="delivery_details_agg_ticket_label_text">Ticket</string>
+    <string name="delivery_details_agg_order_label_text">Order</string>
+    <string name="delivery_details_agg_material_label_text">Material</string>
+    <string name="delivery_details_agg_ticket_label_lb">lb</string>
+    <string name="delivery_details_agg_ticket_label_enter">Enter</string>
+    <string name="delivery_details_agg_convert_to_kg">Convert to kilograms (Kg)</string>
+    <string name="delivery_details_agg_convert_to_mt">Convert to tons (Mt)</string>
+
+    <string name="delivery_status_water_label_text">Water</string>
+    <string name="delivery_status_accum_label_text">Accum</string>
+    <string name="delivery_status_time_label_text">Time</string>
+    <string name="delivery_status_event_label_text">Status Event</string>
+    <string name="delivery_status_drum_revolutions_positive_label_text">Drum +</string>
+    <string name="delivery_status_drum_revolutions_negative_label_text">-</string>
+    <string name="delivery_status_total_pos_drum_revolutions_label_text">Total + Drum Rev</string>
+    <string name="delivery_status_total_neg_drum_revolutions_label_text">Total - Drum Rev</string>
+    <string name="delivery_status_total_water_label_text">Total Water</string>
+
+    <string name="delivery_material_material_label_text">Material</string>
+    <string name="delivery_material_slump_label_text">Slump</string>
+    <string name="delivery_material_quantity_water_label_text">Quantity</string>
+    <string name="delivery_material_total_quantity_water_label_text">Total Quantity</string>
+    <string name="delivery_material_cumulative_quantity_water_label_text">Cumulative Quantity</string>
+    <string name="delivery_material_description_label_text">Description</string>
+
+    <string name="delivery_notes_camera_take_button_text">TAKE!</string>
+    <string name="delivery_notes_speak_button_text">Speak Notes</string>
+    <string name="delivery_notes_enter_notes_hint">Enter notes</string>
+    <string name="delivery_notes_speak_button">Speak</string>
+
+    <!-- Message strings -->
+    <string name="message_new_message_button_text">New Message</string>
+    <string name="message_new_text_hint">Enter a message</string>
+    <string name="message_reply_text_hint">Enter a reply</string>
+    <string name="message_from_dispatch">Dispatch</string>
+    <string name="message_from_driver">Driver</string>
+    <string name="message_click_to_read_more">(Click to Read More)</string>
+    <string name="message_for_empty_dim_list">No canned messages available</string>
+
+    <!--Talk strings-->
+    <string name="ptt_private_call">Private call</string>
+    <string name="ptt_call">Call</string>
+    <string name="ptt_no_endpoint_selected">Select Endpoint</string>
+    <string name="ptt_no_channel_selected">No Channel Selected</string>
+    <string name="ptt_disconnected">Disconnected</string>
+    <string name="talk_service_disconnected">Talk services are currently unavailable</string>
+    <string name="talk_channel_emergency_label">EMERGENCY</string>
+    <string name="talk_channel_default_label">Default</string>
+    <string name="talk_channel_dynamic_label">Dynamic</string>
+    <string name="talk_channel_open_label">Open</string>
+    <string name="talk_channel_closed_label">Closed</string>
+    <string name="talk_enter_filter_hint">Enter a Filter</string>
+    <string name="status_channel_users_count" formatted="false">Users online: %count%</string>
+    <string name="status_group_users_count" formatted="false">Users online: %count%/%total%</string>
+    <string name="status_speaker_muted">Speaker Muted</string>
+
+    <!-- Navigation strings -->
+    <string name="navigation_cannot_load_copilot_title">CoPilot Error</string>
+    <string name="navigation_cannot_load_copilot_map_data_not_licensed">Reason: Map region not selected</string>
+    <string name="navigation_cannot_load_copilot_map_data_not_installed">Reason: Map data not installed</string>
+    <string name="navigation_cannot_load_copilot_restart_required">Reason: An app restart is required</string>
+    <string name="navigation_select_map_data_region"><u>Click Here to Select a Map Data Region</u></string>
+    <string name="navigation_restart_application"><u>Click Here to Restart Application (Required)</u></string>
+    <string name="navigation_map_data_update_in_progress">Notice: Map Data Update In-Progress (%1$s)</string>
+    <string name="navigation_map_data_update_paused">Paused</string>
+    <string name="navigation_restarting_application">Restarting Application…</string>
+    <string name="navigation_loading_copilot">Loading CoPilot…</string>
+    <string name="navigation_enter_address_hint">Enter an address</string>
+    <string name="navigation_charge_charge_count_label">Charge Cnt</string>
+    <string name="navigation_charge_drum_rpm_label">Drum RPM</string>
+
+    <!-- Driver Options strings -->
+    <string name="driver_option_request_pending">Request Pending…</string>
+    <string name="driver_option_in_service_rejected">In Service Rejected</string>
+    <string name="driver_option_go_off_break">Go off Break</string>
+    <string name="driver_option_go_on_break">Go on Break</string>
+
+    <!--Finalize Delivery strings-->
+    <string name="finalize_delivery_leftover_material">Is there any leftover material?</string>
+    <string name="finalize_delivery_reusable_material">Is the material reusable?</string>
+    <string name="finalize_delivery_button_text">Finalize</string>
+    <string name="finalize_delivery_send_button_text">Finalize</string>
+
+
+    <!-- Reuse -->
+    <string name="reuse_delivery_button_text">Reuse</string>
+    <string name="reuse_delivery_send_button_text">Send Reuse</string>
+
+
+    <!-- Communicator strings -->
+    <string name="communicator_channel_unknown">Offline Channel</string>
+    <string name="communicator_contact_unknown">Offline Contact</string>
+    <string name="communicator_contact_filter_abc_keypad_option">ABC</string>
+    <string name="communicator_contact_filter_123_keypad_option">123</string>
+    <string name="communicator_remote_sign_in_request">Request received to connect to communicator</string>
+    <string name="communicator_remote_sign_out_request">Request received to disconnect from communicator</string>
+    <string name="communicator_remote_display_offline_standby_contacts_request">Request received to display offline and standby contacts</string>
+    <string name="communicator_remote_hide_offline_standby_contacts_request">Request received to hide offline and standby contacts</string>
+
+    <!-- Settings -->
+    <string name="settings_access_title">Settings</string>
+    <string name="settings_access_content">Please enter the password to enter Settings:</string>
+    <string name="settings_access_incorrect_password">Incorrect password entered.</string>
+    <string name="settings_category_regional">Regional</string>
+    <string name="settings_category_navigation">Navigation</string>
+    <string name="settings_category_system">System</string>
+    <string name="settings_category_help">Help</string>
+    <string name="settings_units_of_measure">Units of Measure</string>
+    <string name="settings_selection">Setting Selection</string>
+    <string name="settings_category_title_placeholder">Settings Category</string>
+
+    <!-- Engineering -->
+    <string name="engineering_cellular_signal_strength">Cellular Signal Strength</string>
+    <string name="engineering_check_configuration">Check Configuration</string>
+    <string name="engineering_exit_software_title">Exit Software</string>
+    <string name="engineering_exit_software_content">Please enter the password to exit the software:</string>
+    <string name="engineering_exit_software_incorrect_password">Incorrect password entered.</string>
+    <string name="engineering_reset_vehicle_wifi_title">Clear Wifi Connection</string>
+    <string name="engineering_reset_vehicle_wifi_password">Incorrect password entered.</string>
+
+
+    <!-- Brightness -->
+    <string name="toolbar_menu_item_brightness">Brightness</string>
+    <string name="dialog_brightness_manually_adjust_brightness">Adjust Brightness value</string>
+    <string name="dialog_brightness_auto_brightness_switch">Auto Brightness</string>
+    <string name="dialog_brightness_current_brightness_value" translatable="false">%1$d %%</string>
+
+
+    <!-- Media Volume Dialog -->
+    <string name="dialog_media_volume_title">Adjust Media Volume</string>
+    <string name="dialog_media_volume_current_volume" translatable="false">%1$d %2$s</string>
+
+
+    <!--Advanced Engineering strings-->
+    <string name="advanced_engineering_title">TVG Engineering</string>
+    <string name="advanced_engineering_content">Please enter the password to enter TVG Engineering Mode:</string>
+    <string name="advanced_engineering_incorrect_password">Incorrect password entered.</string>
+    <string name="advanced_engineering_button_up">Up</string>
+    <string name="advanced_engineering_button_down">Down</string>
+    <string name="advanced_engineering_button_left">Left</string>
+    <string name="advanced_engineering_button_right">Right</string>
+    <string name="advanced_engineering_button_enter">Enter</string>
+    <string name="advanced_engineering_button_select">Select</string>
+    <string name="advanced_engineering_button_exit">Exit</string>
+
+
+    <!--Help Report strings-->
+    <string name="help_report_problem">Report A Problem</string>
+    <string name="help_report_problem_email_sent_queued">Your email has been queued.</string>
+    <string name="help_report_problem_email_sent_successfully">Email sent successfully.</string>
+    <string name="help_report_problem_email_sent_unsuccessfully">Email was not sent.</string>
+    <string name="help_report_problem_email_intent_title">Send Email</string>
+    <string name="help_report_problem_email_queued">Email Queued</string>
+
+
+    <!-- Enable Bluetooth Dialog -->
+    <string name="bluetooth_not_enabled">Bluetooth was not enabled.</string>
+    <string name="title_not_connected">Not Connected</string>
+
+    <!-- Bluetooth Device List Activity -->
+    <string name="bluetooth_scanning_for_devices">Scanning for devices…</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="paired_devices_header">Paired Devices</string>
+    <string name="available_devices_header">Other Available Devices</string>
+    <string name="bluetooth_scan_for_devices">Scan for devices</string>
+    <string name="unpair_bluetooth_device">Unpair Device</string>
+    <string name="bluetooth_device_binding">Status: Binding…</string>
+
+    <!--  Advanced Message units -->
+    <string name="gallons_label">gallons</string>
+    <string name="liters_label">liters</string>
+    <string name="quarts_label">quarts</string>
+    <string name="cubic_yards_label">cubic yards</string>
+    <string name="cubic_meters_label">cubic meters</string>
+
+    <!-- SplashScreen -->
+    <string name="splash_screen_trimble_logo">TrimbleLogo</string>
+    <string name="splash_screen_trimfleet_logo">TrimFleetLogo</string>
+    <string name="splash_screen_starting_application">Starting application…</string>
+    <string name="splash_screen_startup_task_started">%1$s started</string>
+    <string name="splash_screen_startup_task_updated">%1$s still working</string>
+    <string name="splash_screen_startup_task_completed">%1$s completed</string>
+    <string name="splash_screen_startup_task_succeeded">%1$s succeeded</string>
+    <string name="splash_screen_startup_task_failed">%1$s failed</string>
+    <string name="splash_screen_all_startup_tasks_succeeded">All startup tasks have succeeded</string>
+    <string name="splash_screen_all_startup_tasks_complete_with_failures">Some tasks failed: (Failure count: %1$d)</string>
+    <string name="splash_screen_overall_progress">%1$d/%2$d (%3$d%%) Tasks Completed, Overall Progress: %4$d%%</string>
+
+    <!-- Wifi Selection Menu -->
+    <string name="select_a_truck">Select A Truck</string>
+    <string name="wifi_selection_detail_searching">Searching…</string>
+    <string name="wifi_selection_detail_scanning">Scanning: </string>
+    <string name="wifi_selection_detail_frequency">Frequency: </string>
+    <string name="wifi_selection_detail_connected">Connected</string>
+    <string name="wifi_selection_detail_associating">Associating</string>
+    <string name="wifi_selection_detail_uninitialized">Uninitialized</string>
+    <string name="wifi_selection_detail_invalid">Invalid</string>
+    <string name="wifi_selection_detail_dormant">Dormant</string>
+    <string name="wifi_selection_detail_interface_disabled">Interface disabled</string>
+    <string name="wifi_selection_detail_inactive">Inactive</string>
+    <string name="wifi_selection_detail_disconnected">Disconnected</string>
+    <string name="wifi_selection_detail_associated">Associated</string>
+    <string name="wifi_selection_detail_authenticating">Authenticating</string>
+    <string name="wifi_selection_detail_four_way_handshake">Four-way handshake</string>
+    <string name="wifi_selection_detail_group_handshake">Group handshake</string>
+    <string name="wifi_selection_detail_unknown">Unknown</string>
+    <string name="wifi_selection_select_vehicle_wifi">Select Vehicle WiFi</string>
+    <string name="wifi_selection_find_vehicle">Find vehicle</string>
+    <string name="wifi_selection_selection">Selection:</string>
+    <string name="wifi_selection_selection_forget">Forget</string>
+    <string name="wifi_selection_selection_confirm">Confirm</string>
+    <string name="wifi_selection_selection_remember">Remember</string>
+    <string name="wifi_selection_selection_select">Select</string>
+
+
+    <!-- Permission Strings -->
+    <string name="permissions_insufficient_permissions">Insufficient Permissions\n\nYou do not have the %1$s permission.</string>
+    <string name="permissions_insufficient_permissions_app_terminating">Insufficient Permissions\n\nThe application cannot continue without the %1$s permission.\n\nWould you like to manually grant this permission?</string>
+    <string name="permissions_insufficient_permissions_for_running_copilot_title">Insufficient Permissions</string>
+    <string name="permissions_insufficient_permissions_for_running_copilot_content">You do not have the permissions required for running Copilot.</string>
+    <string name="permissions_insufficient_permissions_permission_required_title">Permission Required</string>
+    <string name="permissions_insufficient_permissions_for_adjusting_media_volume_content">You must enable the WRITE_SETTINGS permission so that TFMA can persist the media volume setting.</string>
+    <string name="permissions_insufficient_permissions_for_adjusting_brightness_content">You must enable the WRITE_SETTINGS permission so that TFMA can persist the brightness setting.</string>
+
+
+    <!-- ABOUT SCREEN START -->
+    <!--About Screen - General -->
+    <string name="about_general_value_unknown">Unknown</string>
+    <string name="about_general_value_loading">Loading…</string>
+    <string name="about_general_value_not_installed">Not Installed</string>
+    <string name="about_general_value_feature_disabled">Disabled</string>
+
+    <!--About Screen - Application Details -->
+    <string name="about_application_details_category">Application Details</string>
+    <string name="about_application_details_category_key" translatable="false">preference_key_application_details</string>
+    <string name="about_application_details_version_key" translatable="false">preference_key_application_details_version</string>
+    <string name="about_application_details_version_title">Application Version</string>
+    <string name="about_application_details_copyright_key" translatable="false">preference_key_application_details_copyright</string>
+    <string name="about_application_details_copyright_title">Copyright</string>
+    <string name="about_application_details_copyright_value" translatable="false">%1$s Trimble Navigation</string>
+
+    <!--About Screen - Device Details -->
+    <string name="about_device_details_category">Device Details</string>
+    <string name="about_device_details_category_key" translatable="false">preference_key_device_details</string>
+    <string name="about_device_details_manufacturer_model_key" translatable="false">preference_key_device_details_manufacturer_model</string>
+    <string name="about_device_details_manufacturer_model_title">Manufacturer / Model</string>
+    <string name="about_device_details_android_version_key" translatable="false">preference_key_device_details_android_version</string>
+    <string name="about_device_details_android_version_title">Android Version</string>
+    <string name="about_device_details_device_id_key" translatable="false">preference_key_device_details_device_id</string>
+    <string name="about_device_details_device_id_title">Device ID</string>
+
+
+    <!--About Screen - Feature Details -->
+    <string name="about_feature_details_category">Feature Details</string>
+    <string name="about_feature_details_category_key" translatable="false">preference_key_feature_details</string>
+    <string name="about_feature_details_premium_mapping_provider_version_key" translatable="false">preference_key_feature_details_premium_mapping_provider_version</string>
+    <string name="about_feature_details_premium_mapping_provider_version_title">ALK SDK Version</string>
+    <string name="about_feature_details_premium_mapping_map_data_version_key" translatable="false">preference_key_feature_details_premium_mapping_map_data_version</string>
+    <string name="about_feature_details_premium_mapping_map_data_version_title">ALK Map Data Version</string>
+    <string name="about_feature_details_premium_mapping_map_data_version_checking_for_update">(Checking for Updates…)</string>
+    <string name="about_feature_details_premium_mapping_map_data_version_update_available">(Update Available)</string>
+    <string name="about_feature_details_communicator_provider_version_key" translatable="false">preference_key_feature_details_communicator_provider_version</string>
+    <string name="about_feature_details_communicator_provider_version_title">Zello PTT APK Version</string>
+    <string name="about_feature_details_dvir_hos_provider_version_key" translatable="false">preference_key_feature_details_dvir_hos_provider_version</string>
+    <string name="about_feature_details_dvir_hos_provider_version_title">ISE eFS Version</string>
+    <!-- ABOUT SCREEN END -->
+
+    <!-- VEHICLE BUS SCREEN START -->
+    <!--Vehicle Bus Screen - General -->
+    <string name="vehicle_bus_data_general_value_loading">Loading…</string>
+
+    <!-- Vehicle Bus - Data -->
+    <string name="vehicle_bus_data_category">Vehicle Bus Data</string>
+    <string name="vehicle_bus_data_category_key" translatable="false">preference_key_vehicle_bus_data</string>
+    <string name="vehicle_bus_data_device_id_key" translatable="false">preference_key_vehicle_bus_data_device_id</string>
+    <string name="vehicle_bus_data_device_id_title">Device ID</string>
+    <string name="vehicle_bus_data_odometer_key" translatable="false">preference_key_vehicle_bus_data_odometer</string>
+    <string name="vehicle_bus_data_odometer_title">Vehicle odometer</string>
+    <string name="vehicle_bus_data_engine_runtime_hours_key" translatable="false">preference_key_vehicle_bus_data_engine_runtime_hours</string>
+    <string name="vehicle_bus_data_engine_runtime_hours_title">Engine runtime hours</string>
+    <!-- VEHICLE BUS SCREEN END -->
+
+    <!--VLB Dialog-->
+    <string name="vlb_dialog_title">Virtual Load Board</string>
+    <string name="vlb_plant_label">Plant:</string>
+    <string name="vlb_estimated_time_label">Estimated Loading Time:</string>
+    <string name="vlb_time_before_loading_label">Time Before Loading:</string>
+    <string name="vlb_last_updated_label">Last Updated</string>
+    <string name="vlb_vehicle_not_scheduled_label">Vehicle is not currently scheduled to load</string>
+    <string name="vlb_no_load_board_data_label">No load board information available</string>
+    <string name="vlb_acquiring_load_board_information_label">Acquiring Load Board information…</string>
+    <string name="vlb_load_board_information_updated">Load board information updated</string>
+    <string name="vlb_progress_dialog_refreshing_label">Refreshing load board data…</string>
+    <!--VLB Dialog end-->
+
+    <!--Disclaimer dialog related strings-->
+    <string name="disclaimer_title">Disclaimer message</string>
+    <string name="disclaimer_content"><![CDATA[This feature sends a significant amount of data over the air and may result in data usage overages which can be costly.<p>Please only use this feature when directed by Trimble support.<p>Thank you!]]></string>
+    <string name="disclaimer_continue">Continue</string>
+    <string name="disclaimer_exit">Exit</string>
+    <!--Disclaimer dialog related strings end-->
+
+    <!--Report audio message related strings-->
+    <string name="report_audio_message_dialog_recording">Recording…</string>
+    <string name="report_audio_message_dialog_stop_recording">Stop Recording</string>
+    <string name="report_audio_message_dialog_stop">Stop</string>
+    <string name="report_audio_message_dialog_click_record_to_start">Click Record to Start</string>
+    <string name="report_audio_message_dialog_record">Record</string>
+    <string name="report_audio_message_dialog_start">Start</string>
+    <string name="report_audio_message_dialog_recording_message">Recording Message…</string>
+    <string name="report_audio_message_dialog_sending_message">Sending Message…</string>
+    <string name="report_audio_message_dialog_sending">Sending…</string>
+    <string name="report_audio_message_dialog_error_media_recorder">Unable to start media recorder</string>
+    <string name="report_audio_message_dialog_media_recorder_error">Error in recording audio</string>
+    <string name="report_audio_message_dialog_timer_text">00:00</string>
+    <string name="report_audio_message_dialog_record_message">Record Message</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Report audio message related strings end-->
+
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="last_update_time_label">Last location update time</string>
+
+    <string name="start_updates">Start updates</string>
+    <string name="stop_updates">Stop updates</string>
+
+    <string name="location_settings_inadequate_warning">The location settings on the device are not
+        adequate to run this sample. Fix in Settings.</string>
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+
+</resources>

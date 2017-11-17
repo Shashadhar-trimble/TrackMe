@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        note: this allows us to easily check the screen density of a
+            device by simply calling getString() on this resource id
+    -->
+    <string name="screen_density" translatable="false">xhdpi</string>
+</resources>

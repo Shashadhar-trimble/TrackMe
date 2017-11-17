@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ref: http://developer.android.com/guide/topics/resources/color-list-resource.html -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/button_light_gray" /> <!-- disabled -->
+    <item android:drawable="@color/trimble_text_white"/> <!-- default -->
+</selector>
